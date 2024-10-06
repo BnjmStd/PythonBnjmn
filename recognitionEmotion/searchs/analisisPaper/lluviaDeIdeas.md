@@ -87,3 +87,26 @@ mindmap
 :::
 
 
+# Resultados por consulta
+
+::: mermaid 
+
+%%{init: {'themeVariables': { 'rootColor': '#09f', 'resultColor': '#4CAF50'}}}%%
+graph TD;
+    A[Base de datos: PubMed]:::root
+    
+    B1[Consulta 1: Deep Learning AND Emotion detection AND Neural Networks AND Children]:::query
+    B2[Consulta 2: Emotional intelligence AND Machine Learning AND Emotional development AND Emotion AI AND Children]:::query
+    B3[Consulta 3: Artificial Intelligence AND Neural Networks AND Emotion classification AND Children]:::query
+    
+    A -->|Resultados: 7| B1:::result
+    A -->|Resultados: 3| B2:::result
+    A -->|Resultados: 9| B3:::result
+
+    classDef root fill:#09f,stroke:#09f,color:#fff;
+    classDef query fill:#fff,stroke:#09f,color:#09f;
+    classDef result fill:#4CAF50,stroke:#4CAF50,color:#fff;
+
+
+
+:::
