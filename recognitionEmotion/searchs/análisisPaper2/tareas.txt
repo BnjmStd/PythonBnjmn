@@ -1,0 +1,25 @@
+vale resumen de los datos que hay que usar para Recognition Emotion:
+# archivos
+son 2 archivos en el google sheets "Busqueda Sistematica" (recomiendo descargarlo como tsv cada uno)
+ - "common_articles" contiene todos los títulos de las búsquedas (920 artículos, no todos tienen la información completa o la tienen sin organizar el texto)
+ - "common_articles in 3db" tiene los 25 artículos de interés que analizamos en detalle (3 no estaban en sci-hub)
+
+# imágenes
+## diagrama circular con los años de publicación
+para este necesito 2 graficos pero 1 de cada archivo, fijarse de que los años esten consecutivos para mantener un orden y que sea el total de archivos correspondiente (columna "Publication Year")
+
+PRECAUCION: a partir de aquí hay que omitir los artículos que en la columna "Estado inicial" digan "Excluido" o "Excluido, no esta en sci-hub" y solo se usara el archivo "common_articles in 3db"
+
+## grafico de barras de grupos de estudios
+1 grafico de barras, ojala con los campos de población ordenados alfabéticamente (columna "Población estudiada")
+
+## grafico de barras de herramientas de calculo usadas
+1 grafico de barras, ojala con los campos de población ordenados alfabéticamente (columna "Método de DL usado")
+
+## grafico de barras de emociones
+aqui probablemente se necesite mas edicion de los datos porque la idea es tener las emociones de a 1 en el grafico para ver cual/es aparecen mas
+1 grafico de barras, me vale el orden (columna "Emociones descritas")
+
+## grafico de barras de los tipos de datos
+aqui mismo caso anterior, probablemente se necesite mas edicion de los datos porque la idea es tener cada tipo por separado
+1 grafico de barras, me vale el orden (columna "Datos emocionales usados (facial, voz, texto)")
